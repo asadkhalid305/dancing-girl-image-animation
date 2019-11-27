@@ -1,0 +1,82 @@
+body {
+  #container {
+    height: 2200vh;
+    position: relative;
+
+    #girl {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      #girlImage {
+        width: 100%;
+        height: 100vh;
+        z-index: -999999;
+        background-image: none;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    #section1 {
+      position: absolute;
+      opacity: 1;
+      transform: translateY(0px);
+      left: 60%;
+      top: 366vh;
+
+      h1 {
+        font-size: 400%;
+        line-height: 1em;
+        width: 100%;
+        font-family: "Cormorant SC", serif;
+        display: block;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        margin-bottom: 40px;
+
+        li {
+          border-bottom: 1px solid #eee;
+          padding: 20px 0;
+
+          dl {
+            width: 100%;
+            display: table;
+
+            dt {
+              display: table-cell;
+              width: 80px;
+              font-family: "Cormorant SC", serif;
+              font-size: 100%;
+              vertical-align: text-top;
+            }
+
+            dd {
+              display: table-cell;
+              vertical-align: text-top;
+              font-size: 90%;
+              font-weight: 200;
+            }
+          }
+        }
+      }
+      #btn-read {
+        text-align: right;
+        text-decoration: underline;
+      }
+    }
+
+    #section2 {
+      position: absolute;
+      opacity: 1;
+      transform: translateY(0px);
+      left: 4%;
+      top: 620vh;
+      width: 100vw;
+    }
+  }
+}
